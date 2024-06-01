@@ -6,9 +6,10 @@ const feedBackSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    uniqueID: {
+    feedBackID: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     message: {
         type: String,
