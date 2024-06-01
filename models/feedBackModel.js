@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { type } = require('os');
+
 
 const feedBackSchema = new mongoose.Schema({
     userID: {
@@ -22,7 +22,6 @@ const feedBackSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     }
-
 })
 
 const FeedBack = mongoose.model('FeedBack', feedBackSchema);
